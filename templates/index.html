@@ -1,0 +1,304 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<!-- Start section-home -->
+<section id="section-home" class="home-wrap">
+	<div class="home-overlay"></div>
+	<div class="container">
+		<!-- Start counter -->
+		<div class="col-md-12 counter-wrap text-center">
+			<div class="counter">
+				<div class="time"></div>
+			</div>
+		</div>
+		<!-- Start counter -->
+	</div>
+	<!-- End container -->
+
+	<!-- Start banner-wrap -->
+	<div class="banner-wrap">
+		<div class="container banner-container">
+			<div class="row">
+				<!-- Start banner-right -->
+				<div class="col-md-6 banner-right text-center">
+					<h2 class="welcome-text">به زودی <span>برمیگردیم</span></h2>
+					<span class="subtitle">تا چند روز آینده سایت به روز رسانی می شود.</span>
+				</div>
+				<!-- End banner-right -->
+
+				<!-- Start banner-left -->
+				<div class="col-md-6 banner-left text-center">
+					<h4 class="newsletter-title">با ما به روز باشید ،<span> ثبت نام کنید</span></h4>
+					<!-- Start mailchimp form -->
+					<form id="mailchimp-form">
+						<div class="email-input">
+							<input id="mailchimp-input" type="email" placeholder="ایمیل خود را وارد کنید">
+							<button class="email-submit" type="submit"><i class="fa fa-sign-in"></i></button>
+						</div>
+					</form>
+					<!-- End mailchimp form -->
+					<div class="subscription-success"></div>
+					<div class="subscription-failed"></div>
+				</div>
+				<!-- End banner-left -->
+			</div>
+			<!-- End row -->
+		</div>
+		<!-- End banner-container -->
+	</div>
+	<!-- End banner-wrap -->
+</section>
+<!-- End section-home -->
+
+<!-- Start section-about -->
+<section id="section-about" class="about-wrap">
+	<div class="container">
+		<div class="row">
+			<!-- Start section-title -->
+			<div class="col-md-12 section-title">
+				<h3 class="black-border">
+					<span class="red-border">درباره ما و</span><span class="red-bold"> ویژگی ها</span>
+				</h3>
+			</div>
+			<!-- End section-title -->
+
+			<div class="col-md-6">
+				<!-- Start image-slider -->
+				<div class="image-slider">
+					<ul class="slider">
+						<li><img src="{% static 'pics/1.jpg' %}" alt=""></li>
+						<li><img src="{% static 'pics/2.jpg' %}" alt=""></li>
+						<li><img src="{% static 'pics/3.jpg' %}" alt=""></li>
+					</ul>
+				</div>
+				<!-- End image-slider -->
+			</div>
+
+			<div class="col-md-6">
+				<!-- Start tab-container -->
+				<div class="tab-container">
+					<!-- Start tab-nav -->
+					<ul class="tab-nav">
+						<li class="tab-selected"><a href="#one">درباره ما</a></li>
+						<li><a href="#two">ویژگی ها</a></li>
+						<li><a href="#three">دیگر</a></li>
+					</ul>
+					<!-- End tab-nav -->
+
+					<!-- Start Tab -->
+					<div class="tab one">
+						<h4>حرفه ی ما به رشد ما کمک می کند</h4>
+						<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+						</p>
+						<!-- Start list-items -->
+						<ul class="list-items">
+							<li><span class="fa fa-long-arrow-left"></span>ما همیشه مشتریانمان را خوشحال نگه می داریم.
+							</li>
+							<li><span class="fa fa-long-arrow-left"></span>طراحان جهانی اعضای تیم ما هستند.</li>
+							<li><span class="fa fa-long-arrow-left"></span>محصولات با کیفیت ما را استثنایی می کند.</li>
+						</ul>
+						<!-- End list-items -->
+					</div>
+					<!-- End Tab -->
+
+					<!-- Start Tab -->
+					<div class="tab two">
+						<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+						</p>
+						<!-- Start single feature -->
+						<div class="feature">
+							<span class="feature-icon">
+								<i class="fa fa-bolt"></i>
+							</span>
+							<div class="feature-desc">
+								<h5>ویژگی اولیه ما</h5>
+								<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+									گرافیک است.</p>
+							</div>
+						</div>
+						<!-- End single feature -->
+
+						<!-- Start single feature -->
+						<div class="feature">
+							<span class="feature-icon">
+								<i class="fa fa-database"></i>
+							</span>
+							<div class="feature-desc">
+								<h5>ویژگی ثانویه ما</h5>
+								<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+									گرافیک است.</p>
+							</div>
+						</div>
+						<!-- End single feature -->
+					</div>
+					<!-- End Tab -->
+
+					<!-- Start Tab -->
+					<div class="tab three">
+						<h4>یک عنوان دیگر</h4>
+						<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+						</p>
+						<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+						</p>
+					</div>
+					<!-- End Tab -->
+				</div>
+				<!-- End tab-container -->
+			</div>
+			<!-- End col-md-6 -->
+		</div>
+		<!-- End row -->
+	</div>
+	<!-- End container -->
+</section>
+<!-- End section-about -->
+
+<!-- Start section-services -->
+<section id="section-services" class="services-wrap">
+	<div class="container">
+		<div class="row">
+			<!-- Start section-title -->
+			<div class="col-md-12 section-title">
+				<h3 class="black-border">
+					<span class="red-border">سرویس های</span><span class="red-bold"> ما </span>
+				</h3>
+			</div>
+			<!-- End section-title -->
+
+			<!-- Start single Service -->
+			<div class="col-md-4 service">
+				<div class="icon">
+					<i class="fa fa-laptop"></i>
+				</div>
+				<h4>طراحی سایت</h4>
+				<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+			</div>
+			<!-- End single Service -->
+
+			<!-- Start single Service -->
+			<div class="col-md-4 service">
+				<div class="icon">
+					<i class="fa fa-paint-brush"></i>
+				</div>
+				<h4>طراحی گرافیک</h4>
+				<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+			</div>
+			<!-- End single Service -->
+
+			<!-- Start single Service -->
+			<div class="col-md-4 service">
+				<div class="icon">
+					<i class="fa fa-edit"></i>
+				</div>
+				<h4>طراحی کاربر پسند</h4>
+				<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+			</div>
+			<!-- End single Service -->
+
+			<!-- Start single Service -->
+			<div class="col-md-4 service">
+				<div class="icon">
+					<i class="fa fa-laptop"></i>
+				</div>
+				<h4>طراحی وب</h4>
+				<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+			</div>
+			<!-- End single Service -->
+
+			<!-- Start single Service -->
+			<div class="col-md-4 service">
+				<div class="icon">
+					<i class="fa fa-paint-brush"></i>
+				</div>
+				<h4>طراحی گرافیک</h4>
+				<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+			</div>
+			<!-- End single Service -->
+
+			<!-- Start single Service -->
+			<div class="col-md-4 service">
+				<div class="icon">
+					<i class="fa fa-edit"></i>
+				</div>
+				<h4>طراحی کاربر پسند</h4>
+				<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+			</div>
+			<!-- End single Service -->
+
+		</div>
+		<!-- End row -->
+	</div>
+	<!-- End container -->
+</section>
+<!-- End section-services -->
+
+<!-- Start section-achievement -->
+<section id="section-achievement" class="achievement-wrap text-center">
+	<div class="achievement-overlay"></div>
+	<div class="container">
+		<div class="row">
+			<!-- Start section-title -->
+			<div class="col-md-12 section-title">
+				<h3 class="white-border">
+					<span class="red-border">دستاورد های </span><span class="red-bold"> ما</span>
+				</h3>
+			</div>
+			<!-- End section-title -->
+
+			<!-- Start achievement-box -->
+			<div class="col-md-3 achievement-box">
+				<div class="achievement">
+					50
+					<span>پروژه</span>
+				</div>
+			</div>
+			<!-- End achievement-box -->
+
+			<!-- Start achievement-box -->
+			<div class="col-md-3 achievement-box">
+				<div class="achievement">
+					40
+					<span>مقاله</span>
+				</div>
+			</div>
+			<!-- End achievement-box -->
+
+			<!-- Start achievement-box -->
+			<div class="col-md-3 achievement-box">
+				<div class="achievement">
+					50
+					<span>مشتریان راضی</span>
+				</div>
+			</div>
+			<!-- End achievement-box -->
+
+			<!-- Start achievement-box -->
+			<div class="col-md-3 achievement-box">
+				<div class="achievement">
+					60
+					<span>آموزش ها</span>
+				</div>
+			</div>
+			<!-- End achievement-box -->
+		</div>
+		<!-- End row -->
+	</div>
+	<!-- End container -->
+</section>
+<!-- Start section-achievement -->
+
+<!--========= Js files =========-->
+<script src="{% static 'js/jquery-1.11.1.min.js' %}"></script>
+<script src="{% static 'js/jquery.nav.js' %}"></script>
+<script src="{% static 'js/jquery.jcountdown.js' %}"></script>
+<script src="{% static 'js/jquery.nicescroll.min.js' %}"></script>
+<script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
+<script src="{% static 'js/jquery.validate.min.js' %}"></script>
+<script src="{% static 'js/jquery.bxslider.min.js' %}"></script>
+<script src="{% static 'js/jquery.placeholder.min.js' %}"></script>
+<script src="{% static 'js/scripts.js' %}"></script>
+
+</body><!-- This template has been downloaded from Webrubik.com -->
+
+</html>
+{% endblock %}
